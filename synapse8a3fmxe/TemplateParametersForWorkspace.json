@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "synapse8a3fmxe"
+		},
+		"synapse8a3fmxe-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:synapse8a3fmxe.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"HttpServer_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/MicrosoftLearning/dp-203-azure-data-engineer/master/Allfiles/labs/01/adventureworks/products.csv"
+		},
+		"synapse8a3fmxe-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://datalake8a3fmxe.dfs.core.windows.net"
+		}
+	}
+}
