@@ -11,6 +11,9 @@
 		"synapse2jz7y5w-WorkspaceDefaultSqlServer_connectionString": {
 			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:synapse2jz7y5w.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
 		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/MicrosoftLearning/dp-203-azure-data-engineer/master/Allfiles/labs/04/data/customer.csv"
+		},
 		"synapse03tuzjw-WorkspaceDefaultStorage_properties_typeProperties_url": {
 			"value": "https://datalake03tuzjw.dfs.core.windows.net"
 		},
