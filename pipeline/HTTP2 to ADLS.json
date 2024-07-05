@@ -1,11 +1,11 @@
 {
-	"name": "HTTP to ADLS",
+	"name": "HTTP2 to ADLS",
 	"properties": {
-		"description": "Download the customer.csv data file from https://raw.githubusercontent.com/MicrosoftLearning/dp-203-azure-data-engineer/master/Allfiles/labs/04/data/customer.csv and save it in a folder on your local computer (it doesn’t matter where). Then in the Customer folder in Synapse Explorer, use the ⤒ Upload button to upload the customer.csv file to the RetailDB/Customer folder in your data lake.",
+		"description": "Download the product.csv data file from https://raw.githubusercontent.com/MicrosoftLearning/dp-203-azure-data-",
 		"activities": [
 			{
 				"name": "HTTP to ADLS",
-				"description": "Download the customer.csv data file from https://raw.githubusercontent.com/MicrosoftLearning/dp-203-azure-data-engineer/master/Allfiles/labs/04/data/customer.csv and save it in a folder on your local computer (it doesn’t matter where). Then in the Customer folder in Synapse Explorer, use the ⤒ Upload button to upload the customer.csv file to the RetailDB/Customer folder in your data lake.",
+				"description": "Download the product.csv data file from https://raw.githubusercontent.com/MicrosoftLearning/dp-203-azure-data-engineer/master/Allfiles/labs/04/data/product.csv and save it in a folder on your local computer (it doesn’t matter where). Then in the Product folder in Synapse Explorer, use the ⤒ Upload button to upload the product.csv file to the RetailDB/Product folder in your data lake.",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -50,13 +50,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Customercsv",
+						"referenceName": "Product",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "ADLS",
+						"referenceName": "Product_out",
 						"type": "DatasetReference"
 					}
 				]
