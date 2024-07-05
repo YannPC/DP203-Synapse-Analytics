@@ -1,0 +1,24 @@
+{
+	"name": "Retail_ixe",
+	"properties": {
+		"Name": "Retail_ixe",
+		"EntityType": "DATABASE",
+		"Description": "",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"DerivedModelDBInfo": "{\"ModelDirectives\":{\"BaseModel\":{\"Name\":\"Retail\",\"Version\":\"1.3.0\"}}}",
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://files@datalake03tuzjw.dfs.core.windows.net/Retail_ixe",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "synapse03tuzjw-WorkspaceDefaultStorage"
+			}
+		}
+	},
+	"type": "DATABASE"
+}
