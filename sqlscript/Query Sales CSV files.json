@@ -2,7 +2,7 @@
 	"name": "Query Sales CSV files",
 	"properties": {
 		"content": {
-			"query": "-- This is auto-generated code\nSELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK 'https://datalake2jz7y5w.dfs.core.windows.net/files/sales/csv/**',\n        FORMAT = 'CSV',\n        PARSER_VERSION = '2.0'\n    ) AS [result]\n",
+			"query": "-- This is auto-generated code\nSELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK 'https://datalake2jz7y5w.dfs.core.windows.net/files/sales/csv/**',\n        FORMAT = 'CSV',\n        PARSER_VERSION = '2.0',\n        HEADER_ROW = TRUE\n    ) AS [result]\n",
 			"metadata": {
 				"language": "sql"
 			},
