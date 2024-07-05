@@ -14,6 +14,9 @@
 		"HttpServer1_properties_typeProperties_url": {
 			"value": "https://raw.githubusercontent.com/MicrosoftLearning/dp-203-azure-data-engineer/master/Allfiles/labs/04/data/customer.csv"
 		},
+		"HttpServer2_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/MicrosoftLearning/dp-203-azure-data-engineer/master/Allfiles/labs/04/data/product.csv"
+		},
 		"synapse03tuzjw-WorkspaceDefaultStorage_properties_typeProperties_url": {
 			"value": "https://datalake03tuzjw.dfs.core.windows.net"
 		},
